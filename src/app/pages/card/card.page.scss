@@ -1,0 +1,52 @@
+/* card.page.scss */
+
+ion-header {
+  ion-toolbar {
+    background-color: #3880ff; /* Cambia el color de fondo del encabezado */
+    --ion-color-base: #fff; /* Cambia el color del texto en el encabezado */
+  }
+}
+
+ion-content {
+  .qr-code-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  canvas {
+    border: 2px solid #3880ff; /* Borde del código QR */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  }
+
+  ion-button {
+    margin-top: 20px;
+    --ion-background-color: #3880ff; /* Cambia el color de fondo del botón */
+    --ion-text-color: #fff; /* Cambia el color del texto del botón */
+  }
+
+  .login-form {
+    margin-top: 20px;
+    ion-input {
+      border: 2px solid #ccc; /* Borde de los campos de entrada */
+      border-radius: 5px; /* Bordes redondeados */
+      margin-bottom: 10px;
+    }
+
+    ion-label {
+      font-weight: bold;
+    }
+
+    ion-button {
+      --ion-background-color: #3880ff;
+      --ion-text-color: #fff;
+    }
+
+    ion-label.error-message {
+      color: #ff0000; /* Color del mensaje de error */
+    }
+  }
+}

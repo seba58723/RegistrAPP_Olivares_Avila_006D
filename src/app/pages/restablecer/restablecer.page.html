@@ -1,0 +1,38 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"
+         text="back"
+         color="warning"></ion-back-button>
+    </ion-buttons>
+    <ion-title></ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large"></ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-card>
+    <img src="assets/duoc.jpg" class="ion-padding" style="background-color:cornsilk;">
+  </ion-card>
+
+  <ion-card-content class="texto">
+    Para restablecer contraseña, porfavor indique su correo.
+  </ion-card-content>
+
+  <ion-item fill="solid">
+    <ion-label position="floating">Correo Electronico: </ion-label>
+    <ion-input type="text" placeholder="Digite su Correo.."></ion-input>
+  </ion-item>
+
+  <ion-button (click)="Enviar()" expand="block" fill="solid" color="warning" shape="round">
+    Enviar
+  </ion-button>
+
+</ion-content>
+
+
