@@ -1,0 +1,4 @@
+probar npm
+npm install qrcode
+si no funciona, probar este comando
+npm install --save-dev @types/qrcode
